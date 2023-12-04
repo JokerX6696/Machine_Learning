@@ -44,3 +44,6 @@ torch.index_select() # 在维度上，按照 index 索引数据
 int_tensor = torch.randint(0,9,size=(3,3,3))
 idx = torch.tensor([0,2], dtype = torch.int32)
 new = torch.index_select(int_tensor,dim=1,index=idx)  # 索引 dim 为 几  就在第几个维度进行索引， 直观感受是按照第几个括号进行索引！！！
+torch.mask(t,mask) # 返回满足条件的一位向量
+# 改变形状
+torch.reshape()  # 变化张量的形状
