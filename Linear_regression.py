@@ -33,8 +33,8 @@ for iteration in range(0,1000):
     # 计算损失值
     loss = (0.5 * (y - y_pred) ** 2).mean()
     # 可视化
-    if iteration % 10 == 0:
-        p()
+    #if iteration % 10 == 0:
+        #p()
     # 反向传播
     loss.backward()
 
